@@ -8,12 +8,37 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="hw-styles.css" />
   </head>
-  <body>
+  <body style="background-color: teal;">
     <main>
-      <h1>Exercise 03 - Form</h1>
-      <form action="">
-        <!-- Add your code here -->
+      <div class="container">
+      <h1>Contact Form</h1>
+      <form action="POST">
+
+        <label for ="name" id="name">Name (required)</label> 
+        <input type="text" required/>
+        <br>
+        
+        <br>
+        <label for ="email" id="email">Email (required)</label>
+        <input type="text" required/>
+        <br>
+        
+        <br>
+        <label for="com" id="c1">Comments?</label>
+        <textarea name="comments" aria-label="comments" placeholder="Any comments?" rows="10" columns="15"></textarea>
+        <br>
+        
+        <br>
+        <input type="checkbox"  name="signup" value="signup">
+        <label for="sign up" id="cb1">Sign up for newslatter</label>
+        <br>
+
+        <br>
+        <button type="submit" class="button1" id="bt1"> <label for="bt1"> Submit</label> </button>
+        <br>
+        
       </form>
+      </div> 
     </main>
   </body>
 </html>
