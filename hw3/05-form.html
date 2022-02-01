@@ -10,11 +10,47 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
     />
+    
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="05-form.css" />
+    
     <script defer src="05-form.js"></script>
   </head>
   <body class="bg-dark">
-    <form class="bg-light border rounded w-50 mx-auto mt-5 p-3">
+    <form class="bg-light border rounded mx-auto p-2 mt-3 w-45" id="form">
       <h1 class="mt-2 mb-4">Contact Form</h1>
+      <div class="container1">
+        <br>
+          
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="name" class="form-control" id="name" required>
+          </div>
+          <br>
+  
+          <div class="form-group">
+            <label for="email">E-mail*</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <br>
+  
+          <div class="form-group">
+            <label for="comments">Comments?</label>
+            <textarea class="form-control" id="comments" rows="3"> </textarea>
+          </div>
+          <br>
+  
+          <div class="checkbox">
+            <label><input type="checkbox" id="signup"> Sign up for newslatter</label>
+          </div>
+          <br>
+  
+          <div class="btn-group">
+          <button type="Submit" id="bt1" class="btn1 btn-primary btn-lg">Submit</button>
+          <button type="Reset" id="bt2" class="btn2 btn-secondary btn-lg">Reset</button>
+          </div>
+        
+        </div>
     </form>
   </body>
 </html>

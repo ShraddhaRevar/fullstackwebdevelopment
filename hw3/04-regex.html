@@ -17,7 +17,21 @@
       <div class="form-group">
         <label for="input">Check for a valid email address: </label>
         <input type="text" class="form-control" id="input" required />
+        <br>
+        <input
+          type="submit"
+          class="btn btn-info"
+          value="Validate"
+          id="reverse"
+          onclick="validateEmail()"
+        />
+        <br>
+        <br>
+        <div id="result"></div>
       </div>
     </main>
   </body>
 </html>
+
+//https://www.codegrepper.com/code-examples/javascript/how+to+validate+email+in+javascript+using+regex
+//https://stackoverflow.com/questions/46155/whats-the-best-way-to-validate-an-email-address-in-javascript/50968324#50968324
