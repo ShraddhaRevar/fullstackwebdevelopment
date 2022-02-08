@@ -1,0 +1,21 @@
+.container{
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .btn-group {
+    width:100%;
+  }
+  
+  .btn1, .btn2 {
+    width: 50%;
+    border-radius: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    margin: 2px;
+  }
+  form{
+    width: 400px;
+  }
