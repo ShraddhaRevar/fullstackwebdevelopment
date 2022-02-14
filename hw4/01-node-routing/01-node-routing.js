@@ -63,12 +63,12 @@ const server = http.createServer((req, res) => {
  } 
 
  else if(req.url === '/check-cookies'){
-  document.cookie = 'hello=world';
-  if (document.cookie.split(';').some(function(item) {
+  let c = res.writeHead( 200, {'Set-Cookie': 'hello=world','Content-Type': 'text/plain'});
+  if (cookie.split(';').some(function(item) {
     return item.trim().indexOf('hello=') == 0
 }))
 
-if (document.cookie.split(';').some((item) => item.trim().startsWith('hello='))) {
+if (c.split(';').some((item) => item.trim().startsWith('hello='))) {
     res.write('yes');
 }
 else { res.write('no');
